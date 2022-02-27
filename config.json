@@ -1,6 +1,6 @@
 {
 	"prefix" : "*",
 	"token"  : "bot token here",
-	"perrol" : ""
+	"perrol" : "",
 	"cspreadsheetId" : ""
 }
