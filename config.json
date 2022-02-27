@@ -2,7 +2,5 @@
 	"prefix" : "*",
 	"token"  : "bot token here",
 	"perrol" : ""
+	"cspreadsheetId" : ""
 }
-
-
-
