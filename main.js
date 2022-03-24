@@ -1,1 +1,345 @@
-const _0xf9f513=_0xd17a;!function(e,s){const t=_0xd17a,o=_0x347c();for(;;)try{if(878023===-parseInt(t(301))/1*(-parseInt(t(255))/2)+-parseInt(t(293))/3*(parseInt(t(274))/4)+-parseInt(t(322))/5+-parseInt(t(335))/6+parseInt(t(356))/7*(-parseInt(t(239))/8)+-parseInt(t(303))/9*(parseInt(t(224))/10)+parseInt(t(285))/11*(parseInt(t(329))/12))break;o.push(o.shift())}catch(e){o.push(o.shift())}}();const{Client:Client,MessageEmbed:MessageEmbed}=require(_0xf9f513(342)),fs=require("fs"),{prefix:prefix,token:token,perrol:perrol,cspreadsheetId:cspreadsheetId}=require(_0xf9f513(253)),client=new Client({disableEveryone:!0}),{google:google}=require(_0xf9f513(328)),{firebaserules:firebaserules}=require(_0xf9f513(347)),{Console:Console}=require(_0xf9f513(240)),auth=new(google[_0xf9f513(330)][_0xf9f513(284)])({keyFile:_0xf9f513(334),scopes:_0xf9f513(227)}),clients=auth.getClient(),googleSheets=google[_0xf9f513(280)]({version:"v4",auth:clients}),spreadsheetId=cspreadsheetId,arraysort=require("array-sort");let sht,post={},points=[];function fread(e,s){const t=_0xf9f513;try{post={rd:e[0],kls:e[1],win:e[2],pts:e[3],team:e[4],did:e[5]},points[t(313)](post),post={}}catch(e){console[t(291)]("")}}function selsheet(e){const s=_0xf9f513;return e==s(234)?sht=s(318):e==s(350)?sht=s(312):e==s(231)?sht=s(260):e==s(310)?sht=s(290):"groupe"==e?sht=s(307):e==s(248)?sht=s(235):e==s(297)?sht="sheet7":e==s(325)&&(sht=s(229)),sht}function updateit(e,s,t,o,n){const r=_0xf9f513;console[r(291)](r(308)),googleSheets[r(257)][r(341)][r(287)]({auth:auth,spreadsheetId:spreadsheetId,range:n,valueInputOption:r(249),resource:{range:n,majorDimension:r(264),values:[[e,s,t,o]]}})}async function readit(e){const s=_0xf9f513;try{console[s(291)]("the val of ghst inside is : "+e);let t=e+s(314);console[s(291)](s(305)+t);const o=await googleSheets.spreadsheets.values.get({auth:auth,spreadsheetId:spreadsheetId,range:t});points=[];for(let e=0;e<=10;e++)fread(o[s(344)][s(341)][e],e);return points}catch(e){console[s(291)](e)}}function _0xd17a(e,s){const t=_0x347c();return(_0xd17a=function(e,s){return t[e-=218]})(e,s)}async function writeit(e,s){const t=_0xf9f513;let o=s+t(327);return await googleSheets.spreadsheets[t(341)][t(358)]({auth:auth,spreadsheetId:spreadsheetId,range:o,valueInputOption:t(249),resource:{values:[e]}}),console[t(291)](t(331)),points}function embeds(e,s,t){const o=_0xf9f513;return(new MessageEmbed)[o(321)](""+t).setTitle(""+e)[o(273)](""+s)[o(299)]()}function _0x347c(){const e=["send","username","#A19882","don't have the permession to do that ","the sorted array is :","161440dEORpn","mentions","*open","https://www.googleapis.com/auth/spreadsheets","then","sheet8"," have tried to acess the higher commands ","groupc","bot online!!","tag","groupa","sheet6","ready","channel","indexOf","8iwniaT","console","Created By Monk and Team  Contact: Monk#4158","argument error ","the val of grop is : ","length"," here is the standings ","account open","gave ","groupf","USER_ENTERED","*seeme"," ======> Account opend for  "," gets ","./config.json","#09ff00","143678BmTybk","user has no Account","spreadsheets","author","the val of sheet is  : ","sheet3","account error ","Points","find","ROWS","the val is ","the value of of arg is : ","content","================================="," tag user : ","trim","reply","the len of pts ","setDescription","2553292AgclOK","message","View points","win"," \t | \t ","split","sheets"," and has ","did","online","GoogleAuth","11DErhvO","roles","update","stands","slice","sheet4","log","the length of points is :","3YMJtUf","plz check ur DM for points :","Account opened successfully for ","login","groupg","users","setTimestamp","the id is : ","19zSkoyt","#d40407","9ZIiWcB","#f47fff","the val of shet is : "," points ","sheet5","come check","Argument Error","groupd","startsWith","sheet2","push","!A:F","| \t ","User already exists : "," , ","sheet1"," =====> the user "," =====> ","setColor","8536915yWxcBK","the val of pts is : ","pts","grouph","member","!A:B","googleapis","38240292TsGpNY","auth","write successfull","the val of agrs  is  : ","the val : ","credentials.json","3537996IoeNaC","You didn't provide crt group : "," and ","#e67000"," goes to ","first","values","discord.js","No user found : ","data","user","shift","googleapis/build/src/apis/firebaserules"," requested for points","the val is : ","groupb","catch","===================\n","\t | \t ","toLowerCase","You didn't provide any arguments : ","5054651VommaL","kls","append","command Error"," to "];return(_0x347c=function(){return e})()}client.on(_0xf9f513(236),()=>{const e=_0xf9f513;console[e(291)](e(232)),client.user.setPresence({status:e(283),activity:{type:"PLAYING",name:e(241)}})});let c=0,tgroups=[_0xf9f513(234),_0xf9f513(350),_0xf9f513(231),_0xf9f513(310),"groupe",_0xf9f513(248),_0xf9f513(297),_0xf9f513(325)];client.on(_0xf9f513(275),async e=>{const s=_0xf9f513;if(e.content[s(311)](s(250))){const t=e[s(267)][s(289)](prefix[s(244)])[s(270)]()[s(279)](" ");t[s(346)]()[s(354)]();if(!t[s(244)])return void e[s(237)][s(219)](embeds(s(309),s(355)+e[s(258)][s(220)]+"!","#d40407"));if(-1==tgroups[s(238)](t[0]))return console.log(s(242)),void e[s(237)][s(219)](embeds(s(309),s(336)+e[s(258)][s(220)]+"!","#d40407"));console.log(s(243)+t[0]),readit(selsheet(t[0]))[s(228)](t=>{const o=s;let n=0,r=t[o(244)];for(console[o(291)](o(292)+r),c=0;c<=r;c++){if(console[o(291)]("the val is "+t[c].did+o(317)+e[o(258)].id),t[c][o(282)]==e[o(258)].id){console.log("the pts is "+t[c].pts),n=c;break}n=0}console[o(291)](o(265)+n),0!=n?(e[o(258)].send(embeds(o(276)," "+e[o(258)][o(220)]+" has "+t[n][o(324)]+o(306),"#09ff00")),e[o(271)](embeds("View points",e.author[o(220)]+o(294),o(254))),console.log(o(320)+e[o(258)].username+o(348))):(e.reply(embeds(o(276),"user has no Account",o(338))),console.log(o(320)+e[o(258)][o(220)]+o(348)))})[s(351)](t=>{const o=s;e[o(271)](embeds(o(276),o(256),o(338))),console.log(o(320)+e[o(258)].username+o(348))})}else if(e[s(267)][s(311)](s(226))){const t=e.content[s(289)](prefix[s(244)])[s(270)]()[s(279)](" ");t[s(346)]()[s(354)]();if(!e[s(326)][s(286)].cache.has(""+perrol))return e[s(271)](embeds("account open",s(222),s(302))),void console[s(291)](e[s(258)].id+s(230)+e[s(258)].username[s(233)]);if(!t.length)return e.channel.send(embeds(s(309),"You didn't provide any arguments : "+e[s(258)][s(345)]+"!",s(302)));if(-1==tgroups[s(238)](t[3]))return console[s(291)]("argument error "),void e[s(237)][s(219)](embeds(s(309),s(336)+e[s(258)][s(220)]+"!",s(302)));let o=selsheet(t[3]);console[s(291)](s(259)+o),readit(o);const n=e[s(225)].users[s(340)]();let r=n.id,i=t[2];if(""==t[2]||null==t[2])return console[s(291)](s(309)),void e.channel[s(219)](embeds(s(309),"You didn't provide any arguments : "+e[s(258)][s(220)]+"!",s(302)));points[s(263)](e=>e[s(282)]==r)?(console.log("already reg  user "),e[s(271)](embeds(s(246),s(316)+n[s(220)],s(302)))):(console[s(291)](s(300)+r),rval=[0,0,0,0,i,r],writeit(rval,o),e[s(271)](embeds(s(246),s(295)+n[s(220)],s(254))),console.log(s(251)+e[s(258)].username+s(281)))}else if(e[s(267)][s(311)](prefix+s(288)))try{const t=e[s(267)][s(289)](prefix.length).trim()[s(279)](" ");t[s(346)]()[s(354)]();if(-1==tgroups.indexOf(t[0]))return console[s(291)]("argument error "),void e[s(237)].send(embeds(s(309),"You didn't provide crt group : "+e[s(258)][s(220)]+"!",s(302)));console[s(291)](s(332)+t[0]);let o=selsheet(t[0]);console[s(291)](s(259)+o);let n=await readit(o);console[s(291)]("the val of : "+n),console.log(s(272)+n[s(244)]);for(let e=1;e<n[s(244)];e++)n[e][s(324)]=1*n[e][s(324)];let r=arraysort(n,s(324),{reverse:!0});console[s(291)](s(223)+r);let i=r[s(244)];e[s(271)](s(245)),console.log(s(268));let a=s(352);for(c=0;c<i;c++)a+=s(315)+r[c].rd+s(278)+r[c].kls+s(278)+r[c].win+s(278)+r[c].pts+s(353)+r[c].team+" \t|\n================ \n";console[s(291)](a),e[s(237)][s(219)](embeds("standings",a,s(221)))}catch(e){console[s(291)](e)}else if(e.content[s(311)]("*addto")){const t=e.content[s(289)](prefix[s(244)])[s(270)]()[s(279)](" ");t[s(346)]()[s(354)]();if(!e.member[s(286)].cache.has(""+perrol))return e[s(271)](embeds("account open",s(222),s(302))),void console[s(291)](e[s(258)].id+" have tried to acess the higher commands "+e[s(258)][s(220)][s(233)]);if(!t[s(244)])return e.channel[s(219)](embeds(s(309),s(355)+e[s(258)]+"!",s(302)));if(!(Number(t[2])&&Number(t[3])&&Number(t[4])&&Number(t[5])))return void e[s(271)](embeds("command Error","plz use the command correctly : "+e[s(258)][s(220)]+"!",s(302)));if(-1==tgroups[s(238)](t[6]))return console[s(291)](s(242)),void e[s(237)][s(219)](embeds("Argument Error",s(336)+e[s(258)]+"!","#d40407"));let o=selsheet(t[6]);console.log(s(259)+o),readit(o)[s(228)](n=>{const r=s,i=e[r(225)][r(298)][r(340)]();id=i.id,console[r(291)](r(266)+t[2]);let a=t[5],c=t[2],l=t[3],d=t[4],f=n[r(244)],u=0;for(let e=1;e<f;e++)if(console[r(291)](r(349)+n[e][r(282)]),n[e][r(282)]===id){let s=1*n[e].pts+1*a;console[r(291)](r(269)+n[e][r(282)]+r(337)+id+" , val is "+a+" and tot is "+s),n[e][r(324)]=1*s,n[e].rd=c,n[e][r(357)]=l,n[e][r(277)]=d,console[r(291)](r(333)+e),console[r(291)](r(323)+n[e][r(324)]);let t=e+1;updateit(c,l,d,s,o+"!A"+t+":D"+t),u+=1}if(0==u)return console[r(291)](r(261)),void e.channel[r(219)](embeds("points",r(343)+i[r(220)]+"!","#d40407"));console[r(291)](r(319)+i[r(220)]+r(252)+a+r(339)+n.id),e[r(271)](embeds(r(262),r(247)+a+r(218)+i[r(220)],r(304)))})}else if(e[s(267)][s(311)]("*"))return void e[s(271)](embeds(s(359),"plz use the command correctly : "+e[s(258)][s(220)]+"!","#d40407"))});let itoken=token;client[_0xf9f513(296)](itoken);
+const { Client, MessageEmbed } = require('discord.js')
+const fs = require('fs');
+const { prefix, token, perrol } = require('./config.json');
+const client = new Client({
+	disableEveryone: true
+});
+const { google } = require('googleapis');
+const { firebaserules } = require('googleapis/build/src/apis/firebaserules');
+const { Console } = require('console');
+const auth = new google.auth.GoogleAuth({
+	keyFile: "credentials.json",
+	scopes: "https://www.googleapis.com/auth/spreadsheets",
+});
+const clients = auth.getClient();
+const googleSheets = google.sheets({ version: "v4", auth: clients });
+const spreadsheetId = "1JruH9prKK6uD0YLMilNUWqmuKlUf8Zr39IUtBRKZNBg";
+const arraysort =require('array-sort')  
+
+
+//main globals 
+let post = {};
+let points = [];
+let sht 
+
+function fread(worksheet, cell) {
+try {
+		post = {
+			rd : worksheet[0],
+			kls : worksheet[1],
+			win : worksheet[2],
+			pts : worksheet[3],
+			team : worksheet[4],
+			did :worksheet[5]
+		}
+		points.push(post);
+		post = {};
+	}catch(er) {
+			console.log('');
+	}
+}
+
+
+function selsheet(grp){
+	if(grp == "groupa"){
+		sht = "sheet1"
+	}	
+	else if(grp == "groupb"){
+		sht = "sheet2"
+	}
+	else if(grp == "groupc"){
+		sht = "sheet3"
+	}
+	else if(grp == "groupd"){
+		sht = "sheet4"
+	}
+	else if(grp == "groupe"){
+		sht = "sheet5"
+	}
+	else if(grp == "groupf"){
+		sht = "sheet6"
+	}
+	else if(grp == "groupg"){
+		sht = "sheet7"
+	}
+	else if(grp == "grouph"){
+		sht = "sheet8"
+	}
+	return sht	
+}
+
+
+function updateit(ar , kl , wn , pts , ran){
+	console.log("come check")
+	googleSheets.spreadsheets.values.update({
+		auth,
+		spreadsheetId,
+		range : ran,
+		valueInputOption: 'USER_ENTERED',
+		resource: {
+			range : ran,
+			majorDimension: 'ROWS',
+			values: [[ar , kl , wn , pts]]}
+	})
+}
+
+
+
+async function readit(gsht) {
+	try{
+		console.log("the val of ghst inside is : " + gsht)
+		let shet = gsht + "!A:F"
+		console.log("the val of shet is : "  + shet)
+		const getRows = await googleSheets.spreadsheets.values.get({
+			auth,
+			spreadsheetId,
+			range: shet,
+		});
+			points = [];
+			for (let i = 0; i <= 10; i++)
+				fread(getRows.data.values[i], i);
+			return points;
+	}catch(er){
+		console.log(er)
+	}
+}
+
+async function writeit(nvals,gsht){
+	let shet = gsht + "!A:B"
+	await googleSheets.spreadsheets.values.append({
+		auth,
+		spreadsheetId,
+		range: shet,
+		valueInputOption: "USER_ENTERED",
+		resource: {
+		  values: [nvals],
+		},
+	  });
+	  console.log("write successfull")
+	  return points;
+}
+
+
+//it is used for embeding the messages 
+function embeds(title, des, color) {
+	const exampleEmbed = new MessageEmbed()
+		.setColor(`${color}`)
+		.setTitle(`${title}`)
+		.setDescription(`${des}`)
+		.setTimestamp()
+	return exampleEmbed;
+}
+
+
+//bot on  here 
+client.on('ready', () => {
+	console.log("bot online!!")
+	client.user.setPresence({
+		status: 'online',
+		activity: {
+			type: 'PLAYING',
+			name: 'Created By Monk and Team  Contact: Monk#4158',
+		},
+	});
+});
+
+
+
+//used for variables 
+let c = 0
+//readit()
+
+let tgroups = ['groupa','groupb','groupc','groupd','groupe','groupf','groupg','grouph']
+
+//commands for the bot starts here 
+client.on('message', async (msg) => {
+	 if (msg.content.startsWith("*seeme")) {
+		const args = msg.content.slice(prefix.length).trim().split(' ');
+		const command = args.shift().toLowerCase();
+		if (!args.length) {
+			 msg.channel.send(embeds("Argument Error", `You didn't provide any arguments : ${msg.author.username}!`, "#d40407"));
+			 return
+		}
+		if(tgroups.indexOf(args[0]) == -1){
+			console.log("argument error ")
+			msg.channel.send(embeds("Argument Error", `You didn't provide crt group : ${msg.author.username}!`, "#d40407"));
+			return 
+		}
+		console.log("the val of grop is : " + args[0])
+		let gsht = selsheet(args[0]) 
+		readit(gsht).then(data => {
+			let val = 0;
+			let n = data.length
+			console.log("the length of points is :" + n)
+			for (c = 0; c <= n; c++) {
+				console.log(`the val is ${data[c].did} , ${msg.author.id}`)
+				if (data[c].did == msg.author.id) {
+					console.log(`the pts is ${data[c].pts}`)
+					val = c
+					break;
+				}
+				else {
+					val = 0
+				}
+			}
+			console.log(`the val is ${val}`)
+			if (val != 0) {
+				msg.author.send(embeds("View points", ` ${msg.author.username} has ${data[val].pts} points `, "#09ff00"))
+				msg.reply(embeds("View points", `${msg.author.username}plz check ur DM for points :`, "#09ff00"))
+				console.log(` =====> ${msg.author.username} requested for points`);
+			}
+			else {
+				msg.reply(embeds("View points", "user has no Account", "#e67000"));
+				console.log(` =====> ${msg.author.username} requested for points`);
+			}	
+		}).catch(err => {
+//			console.log(err);
+			msg.reply(embeds("View points", "user has no Account", "#e67000"));
+			console.log(` =====> ${msg.author.username} requested for points`);
+		});
+	 }
+	 else  if (msg.content.startsWith('*open')) {
+		const args = msg.content.slice(prefix.length).trim().split(' ');
+		const command = args.shift().toLowerCase();
+		if (!msg.member.roles.cache.has(`${perrol}`)) {
+			msg.reply(embeds("account open", `don't have the permession to do that `, "#d40407"))
+			console.log(`${msg.author.id} have tried to acess the higher commands ${msg.author.username.tag}`)
+			return;
+		}
+		if (!args.length) {
+			return msg.channel.send(embeds("Argument Error", `You didn't provide any arguments : ${msg.author.user}!`, "#d40407"));
+		}
+		if(tgroups.indexOf(args[3]) == -1){
+			console.log("argument error ")
+			msg.channel.send(embeds("Argument Error", `You didn't provide crt group : ${msg.author.username}!`, "#d40407"));
+			return 
+		}
+		let gsht = selsheet(args[3]) 
+		console.log("the val of sheet is  : " + gsht)
+		readit(gsht);
+		const taggedUser = msg.mentions.users.first();
+		let id = taggedUser.id;
+		let team = args[2]
+		if(args[2] == '' || args[2] == undefined){
+			console.log("Argument Error")
+			msg.channel.send(embeds("Argument Error", `You didn't provide any arguments : ${msg.author.username}!`, "#d40407"));
+			return
+		}
+		const valch = points.find(vala => vala.did == id)
+		if (!valch) {
+			console.log("the id is : " + id)
+			rval = [0,0,0,0,team,id]
+			writeit(rval,gsht)
+			msg.reply(embeds("account open", `Account opened successfully for ${taggedUser.username}`, "#09ff00"))
+			console.log(` ======> Account opend for  ${msg.author.username} and has `);
+		}
+		else {
+			console.log("already reg  user ")
+			msg.reply(embeds("account open", `User already exists : ${taggedUser.username}`, "#d40407"))
+		}
+	}
+
+	else if (msg.content.startsWith(`${prefix}stands`)) {
+		try{
+			const args = msg.content.slice(prefix.length).trim().split(' ');
+			const command = args.shift().toLowerCase();
+			if(tgroups.indexOf(args[0]) == -1){
+				console.log("argument error ")
+				msg.channel.send(embeds("Argument Error", `You didn't provide crt group : ${msg.author.username}!`, "#d40407"));
+				return 
+			}
+			console.log("the val of agrs  is  : " + args[0])
+			let gsht = selsheet(args[0]) 
+			console.log("the val of sheet is  : " + gsht)
+			let tpts = await readit(gsht);
+			console.log("the val of : " + tpts)
+			console.log("the len of pts " + tpts.length)
+			for(let k = 1 ; k < tpts.length ; k ++){
+				tpts[k].pts = tpts[k].pts * 1
+			}
+			let spts = arraysort(tpts , 'pts' , {reverse : true})
+			console.log("the sorted array is :" + spts) 
+			let n = spts.length
+			msg.reply(" here is the standings ")
+			console.log("=================================")
+			let printStr = '===================\n';
+			for (c = 0; c < n; c++) {
+				printStr += `| \t ${spts[c].rd} \t | \t ${spts[c].kls} \t | \t ${spts[c].win} \t | \t ${spts[c].pts}\t | \t ${spts[c].team} \t|\n================ \n`;
+			}
+			console.log(printStr);
+			msg.channel.send(embeds("standings", printStr, "#A19882"))
+	//		msg.channel.send(printStr)
+	}catch(er){
+			console.log(er);
+		}
+	}
+	else if (msg.content.startsWith('*addto')) {
+		const args = msg.content.slice(prefix.length).trim().split(' ');
+		const command = args.shift().toLowerCase();
+		if (!msg.member.roles.cache.has(`${perrol}`)) {
+			msg.reply(embeds("account open", `don't have the permession to do that `, "#d40407"))
+			console.log(`${msg.author.id} have tried to acess the higher commands ${msg.author.username.tag}`)
+			return;
+		}
+		if (!args.length) {
+			return msg.channel.send(embeds("Argument Error", `You didn't provide any arguments : ${msg.author}!`, "#d40407"));
+		}
+		if (!Number(args[2]) || !Number(args[3]) || !Number(args[4]) || !Number(args[5])) {
+			msg.reply(embeds("command Error", `plz use the command correctly : ${msg.author.username}!`, "#d40407"));
+			return;
+		}
+		if(tgroups.indexOf(args[6]) == -1){
+			console.log("argument error ")
+			msg.channel.send(embeds("Argument Error", `You didn't provide crt group : ${msg.author}!`, "#d40407"));
+			return 
+		}
+		let gsht = selsheet(args[6]) 
+		console.log("the val of sheet is  : " + gsht)
+		readit(gsht).then( data=> {
+		const taggedUser = msg.mentions.users.first();
+		id = taggedUser.id;
+		console.log("the value of of arg is : " + args[2]);
+		let ap = args[5];
+		let ar = args[2]
+		let kl = args[3]
+		let wn = args[4]
+		let alen = data.length
+		let ne = 0;
+		for (let c = 1; c < alen; c++) {
+			console.log("the val is : " + data[c].did)
+			if (data[c].did === id) {
+				let tot = (data[c].pts * 1) + (ap * 1)
+				console.log(` tag user : ${data[c].did} and ${id} , val is ${ap} and tot is ${tot}`)
+				data[c].pts = (tot * 1)
+				data[c].rd  = ar
+				data[c].kls = kl
+				data[c].win = wn
+				console.log("the val : " + c)
+				console.log("the val of pts is : " + data[c].pts)
+				let k = c+1
+				let ran = gsht + "!A" + k +":D" + k
+				updateit(ar , kl , wn , tot ,ran)
+				ne = ne + 1;
+			}
+		}
+		if(ne == 0 ){
+			console.log("account error ")
+			msg.channel.send(embeds("points", `No user found : ${taggedUser.username}!`, "#d40407"));
+			return
+		}
+		else {	
+			console.log(` =====> the user ${taggedUser.username} gets ` + ap + ' goes to ' + data.id);
+			msg.reply(embeds("Points", `gave ${ap} to ${taggedUser.username}`, "#f47fff"));
+		}
+		})
+	}
+	else if( msg.content.startsWith('*')){
+		msg.reply(embeds("command Error", `plz use the command correctly : ${msg.author.username}!`, "#d40407"));
+		return
+	}
+});
+
+
+
+let itoken = token;
+client.login(itoken);
